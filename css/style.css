@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+#btn {
+  background-color: #da291cff;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../img/pexels-chavdar-lungov-3996438.jpg) no-repeat center center/cover;
+  color: #f4f4f4;
+}
+
+#logo {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.7rem;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid green;
+}
+
+header .showcase {
+  padding: 150px 0 180px;
+}
+header .showcase h1 {
+  font-size: 90px;
+  letter-spacing: 5rem;
+  margin-bottom: 10px;
+  animation: text-pop-up-br 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background: -webkit-linear-gradient(
+    45deg,
+    #fff 30%,
+    #44d31d 60%,
+    #f01932 40%
+  );
+  /* Keyframes H1 */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+}
+header .showcase p {
+  font-size: 1.9rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.8);
+  margin-bottom: 50px;
+}
+
+/* About */
+#about {
+  margin-top: 10px;
+}
+#about > div p {
+  font-size: 80px;
+  margin-right: 20px;
+}
+#about div h2 {
+  font-size: 2.2rem;
+}
+
+#about .about {
+  position: relative;
+  margin: 40px 0;
+}
+
+#about .about::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  margin-right: 20px;
+}
+#img-about {
+  margin-bottom: 100px;
+}
+
+#img-about2 {
+}
+img {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+#about article img {
+  width: 60%;
+}
+
+/* Destination */
+
+#destination .destination {
+  position: relative;
+  margin: 100px 0;
+}
+#destination .destination p {
+  font-size: 80px;
+  margin-right: 20px;
+}
+#destination .destination::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  margin-right: 20px;
+}
+
+#btn-destin {
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#destination i {
+  color: black;
+}
+
+/* testemonials */
+
+#testemonials .testemonials {
+  position: relative;
+  margin: 100px 0;
+}
+
+#testemonials .testemonials p {
+  font-size: 80px;
+  margin-right: 20px;
+}
+
+#testemonials .testemonials::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  margin-right: 20px;
+}
+
+gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+.gtco-testimonials h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.gtco-testimonials .owl-stage-outer {
+  padding: 30px 0;
+}
+.gtco-testimonials .owl-nav {
+  display: none;
+}
+.gtco-testimonials .owl-dots {
+  text-align: center;
+}
+.gtco-testimonials .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #01b0f8;
+  margin: 0 5px;
+}
+.gtco-testimonials .owl-dots .active {
+  box-shadow: none;
+}
+.gtco-testimonials .owl-dots .active span {
+  background: #01b0f8;
+  box-shadow: none;
+  height: 12px;
+  width: 12px;
+  margin-bottom: -1px;
+}
+.gtco-testimonials .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+.gtco-testimonials .card > div {
+  box-shadow: rgba(0, 0, 0, 0.8);
+  padding: 0 40px;
+}
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+  width: 100px;
+  height: 100px;
+}
+.gtco-testimonials .card h5 {
+  color: #01b0f8;
+  font-size: 21px;
+  line-height: 1.3;
+}
+.gtco-testimonials .card h5 span {
+  font-size: 18px;
+  color: #666666;
+}
+.gtco-testimonials .card p {
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 15px;
+}
+.gtco-testimonials .active {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.gtco-testimonials .center {
+  opacity: 1;
+}
+.gtco-testimonials .center h5 {
+  font-size: 24px;
+}
+.gtco-testimonials .center h5 span {
+  font-size: 20px;
+}
+.gtco-testimonials .center .card-img-top {
+  max-width: 100%;
+  height: 120px;
+  width: 120px;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
+/* Gallery */
+
+#gallery .headingGallery {
+  margin: 100px 0 60px 0;
+}
+
+#gallery img {
+  width: 90vw;
+  display: flex;
+}
+
+#gallery .panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  border-radius: 50px;
+  flex: 0.2;
+  position: relative;
+  transition: flex 0.6s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#gallery .panel h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 2rem;
+  opacity: 0;
+}
+
+#gallery .panel.active {
+  flex: 2;
+}
+
+#gallery .panel.active h3 {
+  opacity: 1;
+}
+
+/* Footer */
+
+footer {
+  background: #333;
+  color: white;
+  margin-top: 70px;
+}
+
+footer img {
+  width: 60px;
+}
